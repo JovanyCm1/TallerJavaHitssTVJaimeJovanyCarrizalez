@@ -13,6 +13,28 @@
 
 ## Lista de Ejercicios
 
+### 5. Ejercicio restaurante
+
+**Fecha:** 14/08/2025  
+**Enunciado:**  
+Un restaurante necesita un programa que permita al cajero:
+
+Mostrar un menú de opciones:
+
+1. Registrar un pedido.
+2. Mostrar el total de ventas.
+3. Salir del sistema.
+
+Cada pedido se registra ingresando el precio.
+
+El programa debe seguir mostrando el menú hasta que el cajero elija Salir.
+
+Validar que el precio sea positivo antes de sumarlo a las ventas.
+
+**📂 Dirección del proyecto:** [`Restaurante.java`](/ejercicios/Restaurante.java)
+
+---
+
 ### 4. Ejercicio 3: notas finales
 
 **Fecha:** 13/08/2025  
