@@ -15,12 +15,12 @@ import java.util.Scanner;
  * Validar que el precio sea positivo antes de sumarlo a las ventas.
  */
 
-
 public class Restaurante {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int respuesta;
         double precio;
+        double totalVentas = 0;
         int contadorProductos = 0;
         do {
             System.out.println();
@@ -39,12 +39,16 @@ public class Restaurante {
                         precio = sc.nextDouble();
                         if (precio > 0) {
                             contadorProductos++;
+                            totalVentas += precio;
                         } else {
                             System.out.println("Precio inválido. Intente nuevamente.");
                         }
                     } while (precio < 0);
                 }
-                case 2 -> System.out.println("Total de productos vendidos: " + contadorProductos);
+                case 2 -> {
+                    System.out.println("Total de productos vendidos: " + contadorProductos);
+                    System.out.println("Total de ventas: " + totalVentas);
+                }
                 case 3 -> {
                     System.out.println();
                     System.out.println("Haz salido con exito.");
