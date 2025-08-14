@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="44" viewBox="0 0 1000 44" role="img" aria-label="Autor: Jaime Jovany Carrizalez Montoya">
+  <defs>
+    <!-- Gradiente azul y verde claro animado -->
+    <linearGradient id="grad" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00bfff"/>  <!-- Azul brillante -->
+      <stop offset="50%" stop-color="#1ec0ff"/> <!-- Celeste -->
+      <stop offset="100%" stop-color="#00ff88"/> <!-- Verde brillante -->
+      <!-- Animación: mueve el gradiente de izquierda a derecha más rápido -->
+      <animateTransform attributeName="gradientTransform"
+                        type="translate"
+                        values="-1000 0; 1000 0; -1000 0"
+                        dur="4s"
+                        repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="none"/>
+
+  <text x="50%" y="50%"
+        dominant-baseline="middle"
+        text-anchor="middle"
+        font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-size="20"
+        font-weight="700"
+        fill="url(#grad)">
+    Autor: Jaime Jovany Carrizalez Montoya
+  </text>
+</svg>
