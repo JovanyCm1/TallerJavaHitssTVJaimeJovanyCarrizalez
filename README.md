@@ -13,6 +13,52 @@
 
 ## Lista de Ejercicios
 
+### 7. Ejercicio X: matriz con letra X
+**Fecha:** 19/08/2025  
+**Enunciado:**  
+Escribir un programa que imprima una X construida a base de la letra X en las diagonales de la matriz y utilizar el carácter guion bajo como relleno.  
+El tamaño de la X se basa en una variable n que indicará el tamaño de la letra para imprimir en una matriz de n x n.  
+El carácter "X" en mayúscula y el guion bajo "_" para los espacios.  
+
+Por ejemplo para n=5 se obtiene:  
+X___X
+ X_X
+  X
+ X_X
+X___X
+
+Por ejemplo para n=6 se obtiene:  
+
+X____X
+ X__X
+  XX
+  XX
+ X__X
+X____X
+
+Si n es igual a cero imprimir `"ERROR"` y finalizar la ejecución del programa.  
+
+**📂 Dirección del proyecto:** [`EjercicioMatrizX.java`](/ejercicios/EjercicioMatrizX.java)
+
+---
+
+### 6. Ejercicio de arreglos
+**Fecha:** 19/08/2025  
+**Enunciado:**  
+Para la tarea se debe crear un arreglo con 10 elementos (enteros en el rango de 1 a 9).  
+Escriba un programa que imprima el número que tiene más ocurrencias en el arreglo y también imprimir la cantidad de veces que aparece en el arreglo.  
+
+Por ejemplo, para el arreglo: `[1, 2, 3, 3, 4, 5, 5, 5, 6, 7]`  
+Como resultado debería imprimir lo siguiente:  
+1. La mayor ocurrencias es: 3  
+2. El elemento que más se repite es: 5  
+
+En el ejemplo, el elemento que más se repite en el arreglo es el número 5 con una ocurrencia de 3 veces.
+
+**📂 Dirección del proyecto:** [`EjercicioArreglos.java`](/ejercicios/EjercicioArreglos.java)
+
+---
+
 ### 5. Ejercicio restaurante
 
 **Fecha:** 14/08/2025  
