@@ -13,6 +13,73 @@
 
 ## Lista de Ejercicios
 
+### 9. Ejercicio: Sistema de pedidos
+**Fecha:** 28/08/2025  
+**Enunciado:**  
+Vas a crear un mini sistema de pedidos usando varios enum.  
+
+**Paso 1: Crear enums**  
+1. `OrderStatus` → con los estados de un pedido:  
+   - `NEW` → Pedido creado  
+   - `PROCESSING` → Pedido en proceso  
+   - `SHIPPED` → Pedido enviado  
+   - `DELIVERED` → Pedido entregado  
+   - `CANCELLED` → Pedido cancelado  
+   Cada estado debe tener un mensaje asociado.  
+
+2. `OrderPriority` → con los niveles de prioridad:  
+   - `LOW`  
+   - `MEDIUM`  
+   - `HIGH`  
+   Cada prioridad debe tener un número de atención (1 = baja prioridad, 3 = alta prioridad).  
+
+3. `PaymentMethod` → con los métodos de pago:  
+   - `CASH` → Efectivo  
+   - `CARD` → Tarjeta de crédito/débito  
+   - `TRANSFER` → Transferencia bancaria  
+   Cada uno con una descripción (ejemplo: "Efectivo", "Tarjeta de crédito/débito", "Transferencia bancaria").  
+
+---
+
+**Paso 2: Crear la clase `Order`**  
+La clase debe tener:  
+- `int id` → identificador del pedido  
+- `String customer` → nombre del cliente  
+- `OrderStatus status`  
+- `OrderPriority priority`  
+- `PaymentMethod paymentMethod`  
+
+Además, un método `showDetails()` que muestre la información del pedido.  
+
+---
+
+**Paso 3: Clase principal `Main`**  
+En `main()`, crea **3 pedidos diferentes** con distintos estados, prioridades y métodos de pago, y muestra los detalles en pantalla.  
+
+**Ejemplo de salida esperada:** 
+
+Pedido #1
+Cliente: Ana
+Estado: NEW → Pedido creado
+Prioridad: HIGH (Nivel 3)
+Método de pago: CARD → Tarjeta de crédito/débito
+
+Pedido #2
+Cliente: Luis
+Estado: SHIPPED → Pedido enviado
+Prioridad: MEDIUM (Nivel 2)
+Método de pago: CASH → Efectivo
+
+Pedido #3
+Cliente: Marta
+Estado: DELIVERED → Pedido entregado
+Prioridad: LOW (Nivel 1)
+Método de pago: TRANSFER → Transferencia bancaria
+
+**📂 Dirección del proyecto:** [`SistemaDePedidos`](/ejercicios/sistemaDePedidos)
+
+---
+
 ### 8. Ejercicio sistema bancario simple
 
 **Fecha:** 26/08/2025  

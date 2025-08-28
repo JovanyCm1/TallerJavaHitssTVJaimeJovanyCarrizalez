@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "sistemaDePedidos.test.Main",
+      "projectName": "TallerJavaHitssTVJaimeJovanyCarrizalez_8cd3e8b2"
+    },
+    {
+      "type": "java",
       "name": "EjercicioArreglos",
       "request": "launch",
       "mainClass": "EjercicioArreglos",
