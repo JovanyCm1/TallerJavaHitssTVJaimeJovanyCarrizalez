@@ -13,45 +13,81 @@
 
 ## Lista de Ejercicios
 
+### 8. Ejercicio sistema bancario simple
+
+**Fecha:** 26/08/2025  
+**Enunciado:**  
+Problema: Sistema Bancario Simple con IDs Automáticos
+
+Una institución bancaria necesita un sistema básico para administrar cuentas bancarias y registrar sus transacciones.  
+Cada cuenta creada debe tener un ID único que se genere automáticamente sin que el usuario lo proporcione. Lo mismo debe ocurrir con cada transacción registrada.
+
+El sistema debe permitir:
+
+1. Crear cuentas bancarias con un titular y un depósito inicial.
+   - Cada cuenta debe tener: un ID único, el nombre del titular y el saldo actual.
+2. Realizar operaciones bancarias:
+   - **Depósito:** aumentar el saldo de la cuenta.
+   - **Retiro:** disminuir el saldo, siempre que haya suficiente dinero disponible.
+3. Registrar transacciones asociadas a las cuentas.
+   - Cada transacción debe tener un ID único automático, el tipo de operación (depósito o retiro), el monto y la cuenta asociada.
+4. Mostrar información de las cuentas y de las transacciones realizadas.
+
+**Ejemplo de funcionamiento esperado:**
+
+- Crear dos cuentas:
+  - Ana con $5000
+  - Luis con $10000
+- Ana deposita $2000 y retira $1000.
+- Luis retira $3000 y deposita $1500.
+- El sistema debe mostrar el detalle de cada cuenta y un historial de las transacciones con IDs únicos.
+
+**📂 Dirección del proyecto:** [`SistemaBancario`](/ejercicios/sistemaBancario/SistemaBancario.java)
+
+---
+
 ### 7. Ejercicio X: matriz con letra X
+
 **Fecha:** 19/08/2025  
 **Enunciado:**  
 Escribir un programa que imprima una X construida a base de la letra X en las diagonales de la matriz y utilizar el carácter guion bajo como relleno.  
 El tamaño de la X se basa en una variable n que indicará el tamaño de la letra para imprimir en una matriz de n x n.  
-El carácter "X" en mayúscula y el guion bajo "_" para los espacios.  
+El carácter "X" en mayúscula y el guion bajo "\_" para los espacios.
 
 Por ejemplo para n=5 se obtiene:  
-X___X
- X_X
-  X
- X_X
-X___X
+X**_X
+X_X
+X
+X_X
+X_**X
 
-Por ejemplo para n=6 se obtiene:  
+Por ejemplo para n=6 se obtiene:
 
-X____X
- X__X
-  XX
-  XX
- X__X
-X____X
+X\_**\_X
+X**X
+XX
+XX
+X**X
+X\_\_**X
 
-Si n es igual a cero imprimir `"ERROR"` y finalizar la ejecución del programa.  
+Si n es igual a cero imprimir `"ERROR"` y finalizar la ejecución del programa.
 
 **📂 Dirección del proyecto:** [`EjercicioMatrizX.java`](/ejercicios/EjercicioMatrizX.java)
 
 ---
 
 ### 6. Ejercicio de arreglos
+
 **Fecha:** 19/08/2025  
 **Enunciado:**  
 Para la tarea se debe crear un arreglo con 10 elementos (enteros en el rango de 1 a 9).  
-Escriba un programa que imprima el número que tiene más ocurrencias en el arreglo y también imprimir la cantidad de veces que aparece en el arreglo.  
+Escriba un programa que imprima el número que tiene más ocurrencias en el arreglo y también imprimir la cantidad de veces que aparece en el arreglo.
 
 Por ejemplo, para el arreglo: `[1, 2, 3, 3, 4, 5, 5, 5, 6, 7]`  
-Como resultado debería imprimir lo siguiente:  
-1. La mayor ocurrencias es: 3  
-2. El elemento que más se repite es: 5  
+Como resultado debería imprimir lo siguiente:
+
+1. La mayor ocurrencias es: 3
+2. El elemento que más se repite es: 5
 
 En el ejemplo, el elemento que más se repite en el arreglo es el número 5 con una ocurrencia de 3 veces.
 
