@@ -7,16 +7,31 @@ public class Transaccion {
     private int cuentaAsociadaId;
     private String tipoTransaccion;
     private double montoTransaccion;
+    private CuentaBancaria cuentaBancaria;
 
     public Transaccion() {
+        
     idTransaccion=++Transaccion.contadorTransacciones;
     }
 
-    public Transaccion(int cuentaAsociadaId, String tipoTransaccion, double montoTransaccion) {
+    public Transaccion(int cuentaAsociadaId, String tipoTransaccion, double montoTransaccion, CuentaBancaria cuentaBancaria) {
+        this();
         this.cuentaAsociadaId = cuentaAsociadaId;
         this.tipoTransaccion = tipoTransaccion;
         this.montoTransaccion = montoTransaccion;
+        this.cuentaBancaria = cuentaBancaria;
+        realizarTransaccion();
     }
+
+
+    public void realizarTransaccion(){
+        if (this.tipoTransaccion.equals("Deposito")) {
+            this.cuentaBancaria.setSaldo(cuentaBancaria.getSaldo() + montoTransaccion);
+        }else if (this.tipoTransaccion.equals("Retiro")) {
+            this.cuentaBancaria.setSaldo(cuentaBancaria.getSaldo() - montoTransaccion);   
+        }
+    }
+
 
     public String getTipoTransaccion() {
         return tipoTransaccion;

@@ -6,7 +6,7 @@ public class Banco {
 
     private CuentaBancaria[] cuentasBancarias;
     private Transaccion[][] transacciones;
-     private int[] contadorTransaccionesPorCuenta;
+    private int[] contadorTransaccionesPorCuenta;
     
     
     public Banco() {
@@ -15,14 +15,23 @@ public class Banco {
         contadorTransaccionesPorCuenta=new int [10]; 
     }
     
+    public CuentaBancaria buscarCuentaPorId(int id) {
+    for (CuentaBancaria cuenta : cuentasBancarias) {
+        if (cuenta != null && cuenta.getId() == id) {
+            return cuenta;
+        }
+    }
+    return null;
+}
 
     public void crearCuenta(String nombreCompleto, double montoInicial){
         cuentasBancarias[Banco.contadorCuentasBancarias++]= new CuentaBancaria(nombreCompleto, montoInicial);
     }
 
     public void resgistrarTransaccion(int idCuenta, String tipoTransaccion, double monto){
+
         int idx = contadorTransaccionesPorCuenta[idCuenta];
-        transacciones[idCuenta][idx] = new Transaccion(idCuenta,tipoTransaccion,monto);
+        transacciones[idCuenta][idx] = new Transaccion(idCuenta,tipoTransaccion,monto,buscarCuentaPorId(idCuenta));
         contadorTransaccionesPorCuenta[idCuenta]++;
 
     }
@@ -37,6 +46,7 @@ public class Banco {
     }
 
     public void mostrarTransacciones(int idCuenta){
+        System.out.println("Tu cuenta es: " + cuentasBancarias[idCuenta-1]);
         for (int i = 0; i < contadorTransaccionesPorCuenta[idCuenta]; i++) {
             System.out.println(transacciones[idCuenta][i]);
         }

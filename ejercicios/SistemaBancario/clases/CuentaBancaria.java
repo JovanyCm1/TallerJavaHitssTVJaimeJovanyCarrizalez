@@ -6,6 +6,7 @@ public class CuentaBancaria {
     private String nombreTitular;
     private double saldo;
     private Transaccion transaccion;
+    private Banco banco;
 
     public CuentaBancaria() {
         this.id = ++CuentaBancaria.contadorCuentasBancarias;
@@ -44,20 +45,6 @@ public class CuentaBancaria {
     }
     //Methods
 
-    public void depositar(Double saldo){
-        transaccion.setCuentaAsociadaId(this.id);
-        transaccion.setTipoTransaccion("Deposito");
-        transaccion.setMontoTransaccion(saldo);
-        this.saldo += saldo;
-    }
-
-    
-    public void retirar(Double saldo){
-        transaccion.setCuentaAsociadaId(this.id);
-        transaccion.setTipoTransaccion("Retiro");
-        transaccion.setMontoTransaccion(saldo);
-        this.saldo -= saldo;
-    }
 
 
 
