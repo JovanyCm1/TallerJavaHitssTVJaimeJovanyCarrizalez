@@ -39,7 +39,6 @@ Vas a crear un mini sistema de pedidos usando varios enum.
    - `TRANSFER` → Transferencia bancaria  
    Cada uno con una descripción (ejemplo: "Efectivo", "Tarjeta de crédito/débito", "Transferencia bancaria").  
 
----
 
 **Paso 2: Crear la clase `Order`**  
 La clase debe tener:  
@@ -51,7 +50,6 @@ La clase debe tener:
 
 Además, un método `showDetails()` que muestre la información del pedido.  
 
----
 
 **Paso 3: Clase principal `Main`**  
 En `main()`, crea **3 pedidos diferentes** con distintos estados, prioridades y métodos de pago, y muestra los detalles en pantalla.  
