@@ -109,7 +109,7 @@ El sistema debe permitir:
 - Luis retira $3000 y deposita $1500.
 - El sistema debe mostrar el detalle de cada cuenta y un historial de las transacciones con IDs únicos.
 
-**📂 Dirección del proyecto:** [`SistemaBancario`](/ejercicios/sistemaBancario/SistemaBancario.java)
+**📂 Dirección del proyecto:** [`SistemaBancario`](/ejercicios/SistemaBancario)
 
 ---
 
