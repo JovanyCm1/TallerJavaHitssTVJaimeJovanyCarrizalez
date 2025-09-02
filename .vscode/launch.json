@@ -8,6 +8,20 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "companiaEmpleados.test.Main",
+      "projectName": "TallerJavaHitssTVJaimeJovanyCarrizalez_8cd3e8b2"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "EjercicioCompania.test.Main",
+      "projectName": "TallerJavaHitssTVJaimeJovanyCarrizalez_8cd3e8b2"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "sistemaDePedidos.test.Main",
       "projectName": "TallerJavaHitssTVJaimeJovanyCarrizalez_8cd3e8b2"
     },
