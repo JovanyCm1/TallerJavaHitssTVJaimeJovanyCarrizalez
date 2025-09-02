@@ -13,6 +13,25 @@
 
 ## Lista de Ejercicios
 
+### 10. Ejercicio: Compañía de empleados
+**Fecha:** 01/09/2025  
+**Enunciado:**  
+Una compañía maneja empleados y clientes, entre los empleados hay gerentes que manejan presupuesto para su área (modificable) y a todos los empleados se les puede aumentar el sueldo.  
+
+Se pide una jerarquía de clases de los tipos de persona mencionados, tomando como base la figura del diagrama UML de clases.  
+
+Para todas las clases de la jerarquía tenga en cuenta:  
+- Métodos *getter*  
+- Un constructor  
+- El método `toString()` con sobre-escritura  
+- Para `Gerente` además, el método *setter* de presupuesto.  
+
+También incluir una clase `Main` con algún ejemplo de un `Gerente` e imprimir todos sus datos (y heredados) vía `toString()`.  
+
+**📂 Dirección del proyecto:** [`companiaEmpleados`](/ejercicios/companiaEmpleados)
+
+---
+
 ### 9. Ejercicio: Sistema de pedidos
 **Fecha:** 28/08/2025  
 **Enunciado:**  
@@ -74,7 +93,7 @@ Estado: DELIVERED → Pedido entregado
 Prioridad: LOW (Nivel 1)
 Método de pago: TRANSFER → Transferencia bancaria
 
-**📂 Dirección del proyecto:** [`SistemaDePedidos`](/ejercicios/sistemaDePedidos)
+**📂 Dirección del proyecto:** [`sistemaDePedidos`](/ejercicios/sistemaDePedidos)
 
 ---
 
