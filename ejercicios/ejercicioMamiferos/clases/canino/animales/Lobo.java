@@ -12,19 +12,19 @@ public class Lobo extends Canino {
     }
        @Override
     public String comer() {
-        return "Soy un lobo y estoy comiendo... ¡pero solo si no hay Caperucita cerca!";
+        return "Soy un lobo y estoy comiendo... pero solo si no hay Caperucita cerca!";
     }
     @Override
     public String dormir() {
-        return "Soy un lobo y estoy durmiendo... ¡soñando que programo en Java y aúllo a la luna!";
+        return "Soy un lobo y estoy durmiendo... soñando que programo en Java y aúllo a la luna";
     }
     @Override
     public String correr() {
-        return "Soy un lobo y estoy corriendo... ¡más rápido que los bugs en mi código!";
+        return "Soy un lobo y estoy corriendo... más rápido que los bugs en mi código";
     }
     @Override
     public String comunicarse() {
-        return "Soy un lobo y estoy aullando... ¡para que todos los programadores despierten!";
+        return "Soy un lobo y estoy aullando... para que todos los programadores despierten!";
     }
     
     

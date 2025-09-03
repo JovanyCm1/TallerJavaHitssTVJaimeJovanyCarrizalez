@@ -15,12 +15,12 @@ public class Leon extends Felino {
 
     @Override
     public String comer() {
-        return "Soy un león y estoy comiendo.";
+        return "Soy un león y estoy comiendo con mi manada de " + numeroManada + " miembros. Aquí nadie se queda con hambre!";
     }
 
     @Override
     public String dormir() {
-        return "Soy un león y estoy durmiendo.";
+        return "Soy un león y estoy durmiendo. ¡Con " + numeroManada + " leones cerca, nadie me molesta!";
     }
 
     @Override
@@ -30,8 +30,7 @@ public class Leon extends Felino {
 
     @Override
     public String comunicarse() {
-        return "Soy un león y estoy rugiendo.";
-
+        return "Soy un león y estoy rugiendo a " + potenciaRugidoEnDecibel + " decibelios. Hasta el vecino me escucha!";
     }
 
     @Override

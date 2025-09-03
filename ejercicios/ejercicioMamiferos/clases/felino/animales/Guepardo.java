@@ -11,26 +11,22 @@ public class Guepardo extends Felino {
 
     @Override
     public String comer() {
-      
-        return "Soy un guepardo y estoy comiendo.";
+        return "Soy un guepardo y estoy comiendo. ¡Espero que mi comida no sea más rápida que yo!";
     }
 
     @Override
     public String dormir() {
-        
-        return "Soy un guepardo y estoy durmiendo.";
-
+        return "Soy un guepardo y estoy durmiendo. ¡No me despiertes, sueño que gano carreras!";
     }
 
     @Override
     public String correr() {
-     return "Soy un guepardo y estoy corriendo.";
-
+        return "Soy un guepardo y estoy corriendo. ¡Si parpadeas, me pierdes!";
     }
 
     @Override
     public String comunicarse() {
-        return "Soy un guepardo y estoy rugiendo.";
+        return "Soy un guepardo y estoy rugiendo. ¡Mi rugido es más rápido que tu WiFi!";
     }
 
     @Override
@@ -38,6 +34,4 @@ public class Guepardo extends Felino {
         return super.toString();
     }
 
-    
-    
 }

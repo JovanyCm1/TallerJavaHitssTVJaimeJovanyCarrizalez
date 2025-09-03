@@ -13,6 +13,28 @@
 
 ## Lista de Ejercicios
 
+### 11. Ejercicio: Abstracción mamíferos
+**Fecha:** 02/09/2025  
+**Enunciado:**  
+Diseñar un programa para administrar mamíferos de un zoológico: leones, tigres, guepardos, lobos y perros salvajes africanos.  
+
+Se requiere una jerarquía con la clase abstracta `Mamifero`, y derivadas `Felino` (León, Tigre, Guepardo) y `Canino` (Lobo, Perro).  
+- **Mamífero:** atributos comunes (hábitat, altura, largo, peso, nombre científico) y métodos abstractos `comer()`, `dormir()`, `correr()`, `comunicarse()`.  
+- **Canino:** agrega color y tamaño de colmillos.  
+- **Felino:** agrega tamaño de garras y velocidad.  
+- **Clases concretas:**  
+  - León: número de manada y potencia de rugido.  
+  - Tigre: especie.  
+  - Guepardo: sin atributos extra.  
+  - Lobo: número de camada y especie.  
+  - Perro: fuerza de mordida.  
+
+Crear la clase `EjemploMamiferos` con instancias (5 a 7 objetos) y mostrar la información en consola usando polimorfismo (`toString()`).  
+
+**📂 Dirección del proyecto:** [`ejercicioMamiferos`](/ejercicios/ejercicioMamiferos)
+
+---
+
 ### 10. Ejercicio: Compañía de empleados
 **Fecha:** 01/09/2025  
 **Enunciado:**  

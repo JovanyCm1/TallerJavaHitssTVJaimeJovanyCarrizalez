@@ -13,22 +13,25 @@ public class Tigre extends Felino {
 
     @Override
     public String comer() {
-        return "Soy un tigre y estoy comiendo.";
+        return "Soy un tigre de la especie " + especieTigre
+                + " y estoy comiendo.";
     }
 
     @Override
     public String dormir() {
-        return "Soy un tigre y estoy durmiendo.";
+        return "Soy un tigre de la especie " + especieTigre + " y estoy durmiendo.";
     }
 
     @Override
     public String correr() {
-        return "Soy un tigre y estoy corriendo.";
+        return "Soy un tigre de la especie " + especieTigre
+                + " y estoy corriendo. ¡Mis rayas se ven borrosas de lo rápido que voy!";
     }
 
     @Override
     public String comunicarse() {
-        return "Soy un tigre y estoy rugiendo.";
+        return "Soy un tigre de la especie " + especieTigre
+                + " y estoy rugiendo.";
     }
 
     @Override
