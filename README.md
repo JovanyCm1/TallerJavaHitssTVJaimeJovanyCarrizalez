@@ -37,7 +37,7 @@ Finalmente, crear la clase `ProyectoCatalogo` con ejemplos (4 a 7 objetos) en un
 
 **📂 Dirección del proyecto:** [`interfacesCatalogo`](/ejercicios/interfacesCatalogo)
 
-
+---
 
 ### 11. Ejercicio: Abstracción mamíferos
 **Fecha:** 02/09/2025  
