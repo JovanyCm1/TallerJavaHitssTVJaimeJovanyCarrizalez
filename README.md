@@ -13,6 +13,32 @@
 
 ## Lista de Ejercicios
 
+### 12. Ejercicio: Catálogo de productos
+**Fecha:** 04/09/2025  
+**Enunciado:**  
+El objetivo es exponer los conceptos de **polimorfismo** mediante clases abstractas e interfaces.  
+
+- **Interfaces:**  
+  - `IProducto`: `getPrecio()`, `getPrecioVenta()`.  
+  - `IElectronico`: `getFabricante()`.  
+  - `ILibro`: `getFechaPublicacion()`, `getAutor()`, `getTitulo()`, `getEditorial()`.  
+
+- **Clases abstractas:**  
+  - `Producto` (implementa `IProducto`, atributo `precio`).  
+  - `Electronico` (implementa `IElectronico`, atributo `fabricante`).  
+
+- **Clases concretas:**  
+  - `IPhone` (extiende `Electronico`, atributos `color` y `modelo`).  
+  - `TvLcd` (extiende `Electronico`, atributo `pulgada`).  
+  - `Libro` (extiende `Producto`, implementa `ILibro`, atributos `fechaPublicacion`, `autor`, `titulo`, `editorial`).  
+  - `Comics` (extiende `Libro`, atributo `personaje`).  
+
+Finalmente, crear la clase `ProyectoCatalogo` con ejemplos (4 a 7 objetos) en un arreglo `IProducto[]` y mostrar los datos en consola aplicando polimorfismo.  
+
+**📂 Dirección del proyecto:** [`interfacesCatalogo`](/ejercicios/interfacesCatalogo)
+
+
+
 ### 11. Ejercicio: Abstracción mamíferos
 **Fecha:** 02/09/2025  
 **Enunciado:**  
