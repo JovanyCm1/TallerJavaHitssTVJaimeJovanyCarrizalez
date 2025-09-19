@@ -12,6 +12,16 @@
 ---
 
 ## Lista de Ejercicios
+### 13. Validación de Usuarios en .txt
+**Fecha:** 08/09/2025  
+**Enunciado:**  
+Desarrolla un programa que lea un archivo de texto con una lista de nombres de usuarios.  
+- Si el archivo no existe, captura la excepción correspondiente.  
+- Verifica que cada nombre tenga al menos 3 caracteres; en caso contrario, lanza una excepción personalizada llamada `NombreInvalidoException`.  
+
+**📂 Dirección del proyecto:** [`validacionDeUsuarios`](/ejercicios/validacionDeUsuarios)
+
+---
 
 ### 12. Ejercicio: Catálogo de productos
 **Fecha:** 04/09/2025  
