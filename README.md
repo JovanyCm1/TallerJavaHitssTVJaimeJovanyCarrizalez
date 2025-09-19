@@ -11,6 +11,25 @@
 
 ---
 
+### 14. Genericos supermercado
+**Fecha:** 10/09/2025  
+**Enunciado:**  
+Diseñar una jerarquía de productos con una clase padre `Producto` (atributos: nombre, precio) y cuatro clases hijas:  
+
+- **Fruta:** peso, color.  
+- **Lácteo:** cantidad, proteínas.  
+- **Limpieza:** componentes, litros.  
+- **NoPerecible:** contenido, calorías.  
+
+Cada clase debe tener sus constructores y getters para inicializar y acceder a los atributos.  
+
+En la clase `Main`, crear un objeto "bolsa" para cada tipo de producto con 5 elementos y mostrar el detalle completo de cada uno (nombre, precio y atributos propios) sin necesidad de usar *casting* ni sobrescribir `toString()`.  
+
+**📂 Dirección del proyecto:** [`carritoDeSupermercado`](/ejercicios/carritoDeSupermercado)
+
+
+---
+
 ## Lista de Ejercicios
 ### 13. Validación de Usuarios en .txt
 **Fecha:** 08/09/2025  
