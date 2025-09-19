@@ -1,0 +1,7 @@
+Factura ID: 1001
+Cliente: Cliente [id=C01, nombre=Juan Perez]
+Productos:
+- Producto [id=1, descripcion=Laptop, precio=1500.0] | Precio: $1500.0
+- Producto [id=2, descripcion=Smartphone, precio=800.0] | Precio: $800.0
+- Producto [id=3, descripcion=Tablet, precio=300.0] | Precio: $300.0
+Total: $2600.0

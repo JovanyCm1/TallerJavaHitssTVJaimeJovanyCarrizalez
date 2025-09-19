@@ -1,0 +1,6 @@
+Factura ID: 1002
+Cliente: Cliente [id=C02, nombre=Carlos Sanchez]
+Productos:
+- Producto [id=2, descripcion=Smartphone, precio=800.0] | Precio: $800.0
+- Producto [id=3, descripcion=Tablet, precio=300.0] | Precio: $300.0
+Total: $1100.0

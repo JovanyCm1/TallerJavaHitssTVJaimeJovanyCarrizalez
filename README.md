@@ -11,6 +11,30 @@
 
 ---
 
+### 15.Sistema de facturación
+
+**Fecha:** 15/09/2025  
+**Enunciado:**  
+Crear una clase con métodos estáticos para administrar facturas:  
+
+1. **Guardar factura:** se debe almacenar en un archivo dentro de una carpeta llamada `facturas`, con el nombre `factura_idFactura.txt`.  
+   - Ejemplo: `Archivos.guardarFactura(f1);`  
+
+2. **Leer factura:** mostrar en consola el contenido de una factura dado su ID.  
+   - Ejemplo: `Archivos.leerFactura(idFactura);`  
+
+3. **Listar facturas:** mostrar en consola los nombres de todos los archivos de facturas existentes.  
+   - Ejemplo de salida:  
+     ```
+     factura_1.txt
+     factura_2.txt
+     ```  
+
+**📂 Dirección del proyecto:** [`sistemaDeFacturacion`](/ejercicios/sistemaDeFacturacion)
+
+
+---
+
 ### 14. Genericos supermercado
 **Fecha:** 10/09/2025  
 **Enunciado:**  
