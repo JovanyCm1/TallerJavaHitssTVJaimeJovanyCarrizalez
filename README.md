@@ -9,6 +9,31 @@
   <img src="./autor.svg" alt="Autor: Jaime Jovany Carrizalez Montoya" />
 </p>
 
+## Lista de Ejercicios
+---
+
+### 16. List: Proyecto Vuelo
+
+**Fecha:** 18/09/2025  
+**Enunciado:**  
+A partir de una tabla de llegadas de vuelos, se pide:  
+
+1. Crear una lista de objetos `Vuelo` manteniendo el mismo orden de la tabla original.  
+   - Atributos: nombre (String), origen (String), destino (String), fecha de llegada (LocalDate/LocalTime) y número de pasajeros (int).  
+
+2. Implementar un método que permita ordenar los vuelos por fecha de llegada de forma ascendente.  
+
+3. Obtener el último vuelo en llegar.  
+
+4. Identificar el vuelo con el menor número de pasajeros.  
+
+El resultado esperado debe mostrar:  
+- El listado ordenado por fecha de llegada ascendente.  
+- El último vuelo en llegar.  
+- El vuelo con menor número de pasajeros.  
+
+**📂 Dirección del proyecto:** [`ProyectoVuelo`](/ejercicios/proyectoVuelo)
+
 ---
 
 ### 15.Sistema de facturación
@@ -36,6 +61,7 @@ Crear una clase con métodos estáticos para administrar facturas:
 ---
 
 ### 14. Genericos supermercado
+
 **Fecha:** 10/09/2025  
 **Enunciado:**  
 Diseñar una jerarquía de productos con una clase padre `Producto` (atributos: nombre, precio) y cuatro clases hijas:  
@@ -54,8 +80,8 @@ En la clase `Main`, crear un objeto "bolsa" para cada tipo de producto con 5 ele
 
 ---
 
-## Lista de Ejercicios
 ### 13. Validación de Usuarios en .txt
+
 **Fecha:** 08/09/2025  
 **Enunciado:**  
 Desarrolla un programa que lea un archivo de texto con una lista de nombres de usuarios.  
@@ -67,6 +93,7 @@ Desarrolla un programa que lea un archivo de texto con una lista de nombres de u
 ---
 
 ### 12. Ejercicio: Catálogo de productos
+
 **Fecha:** 04/09/2025  
 **Enunciado:**  
 El objetivo es exponer los conceptos de **polimorfismo** mediante clases abstractas e interfaces.  
@@ -93,6 +120,7 @@ Finalmente, crear la clase `ProyectoCatalogo` con ejemplos (4 a 7 objetos) en un
 ---
 
 ### 11. Ejercicio: Abstracción mamíferos
+
 **Fecha:** 02/09/2025  
 **Enunciado:**  
 Diseñar un programa para administrar mamíferos de un zoológico: leones, tigres, guepardos, lobos y perros salvajes africanos.  
@@ -115,6 +143,7 @@ Crear la clase `EjemploMamiferos` con instancias (5 a 7 objetos) y mostrar la in
 ---
 
 ### 10. Ejercicio: Compañía de empleados
+
 **Fecha:** 01/09/2025  
 **Enunciado:**  
 Una compañía maneja empleados y clientes, entre los empleados hay gerentes que manejan presupuesto para su área (modificable) y a todos los empleados se les puede aumentar el sueldo.  
@@ -134,6 +163,7 @@ También incluir una clase `Main` con algún ejemplo de un `Gerente` e imprimir 
 ---
 
 ### 9. Ejercicio: Sistema de pedidos
+
 **Fecha:** 28/08/2025  
 **Enunciado:**  
 Vas a crear un mini sistema de pedidos usando varios enum.  
