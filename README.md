@@ -11,6 +11,50 @@
 
 ## Lista de Ejercicios
 
+### 17. Gestión de un Torneo Deportivo Universitario
+
+**Fecha:** 22/09/2025  
+**Enunciado:**  
+Administrar un torneo con varias disciplinas (fútbol, básquetbol, voleibol, etc.), registrando jugadores y gestionando inscripciones con diferentes implementaciones de `Set`.
+
+**Requisitos:**
+1. **Registro de jugadores por disciplina**
+   - Cada jugador: **ID único** y **nombre**.
+   - **Sin duplicados** en la misma disciplina.
+2. **Mostrar inscripciones con `Set`:**
+   - `HashSet` → verificación rápida (sin orden).
+   - `LinkedHashSet` → orden de **inscripción**.
+   - `TreeSet` → **orden alfabético** por nombre.
+3. **Operaciones:**
+   - Registrar jugador en una disciplina (evitar duplicados).
+   - Mostrar jugadores por disciplina según el `Set` utilizado.
+   - Buscar si un jugador está inscrito en una disciplina.
+   - Eliminar jugador de una disciplina.
+4. **Menú de opciones:**
+   1) Mostrar jugadores por deporte  
+   2) Contar jugadores en cada disciplina  
+   3) Fusionar equipos (unión)  
+   4) Ver jugadores en común (intersección)  
+   5) Transferir jugador de un deporte a otro  
+   6) Mostrar todos los jugadores **ordenados por nombre**  
+   7) Mostrar todos los jugadores en **orden de inscripción**  
+   8) **Ranking** de jugadores por **ID**  
+   9) Salir
+
+**Pruebas sugeridas:**
+- Contar inscritos por disciplina.  
+- Fusionar equipos (fútbol + básquetbol) y mostrar únicos.  
+- Encontrar jugadores comunes (intersección) entre deportes.  
+- Transferir jugador de básquetbol a fútbol.  
+- Mostrar jugadores ordenados por **nombre** (TreeSet).  
+- Generar listado en **orden de inscripción** (LinkedHashSet).  
+- Ranking por **ID** (p. ej., `TreeSet` con comparador por ID).
+
+**📂 Dirección del proyecto:** [`setDeportes`](/ejercicios/setDeportes)
+
+
+---
+
 ### 16. List: Proyecto Vuelo
 
 **Fecha:** 18/09/2025  
