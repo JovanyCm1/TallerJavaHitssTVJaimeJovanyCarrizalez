@@ -10,7 +10,6 @@
 </p>
 
 ## Lista de Ejercicios
----
 
 ### 16. List: Proyecto Vuelo
 
