@@ -11,6 +11,36 @@
 
 ## Lista de Ejercicios
 
+### 18. Gestión de Inventario en una Tienda de Deportes
+
+**Fecha:** 24/09/2025  
+**Enunciado:**  
+Una cadena de tiendas de deportes maneja miles de productos (tenis, camisetas, balones, etc.).  
+Cada producto tiene:
+
+- Código único (SKU)
+- Nombre del producto
+- Categoría (fútbol, baloncesto, running, etc.)
+- Stock disponible en cada sucursal
+
+El reto es gestionar el inventario de manera eficiente:
+
+- Poder acceder rápidamente a un producto por su código.
+- Mantener los productos ordenados por nombre para listados.
+- Mantener el orden de inserción para reportes de recepción de mercancía.
+
+**Requisitos del sistema:**
+
+1. Registrar productos en el inventario.
+2. Consultar un producto en O(1) usando su código SKU.
+3. Generar un reporte de productos en el orden en que fueron agregados.
+4. Generar un reporte de productos ordenados alfabéticamente por nombre.
+5. Actualizar stock cuando se registren ventas o lleguen nuevas unidades.
+
+**📂 Dirección del proyecto:** [`mapTiendaDeDeportes`](/ejercicios/mapTiendaDeDeportes)
+
+---
+
 ### 17. Gestión de un Torneo Deportivo Universitario
 
 **Fecha:** 22/09/2025  
@@ -18,6 +48,7 @@
 Administrar un torneo con varias disciplinas (fútbol, básquetbol, voleibol, etc.), registrando jugadores y gestionando inscripciones con diferentes implementaciones de `Set`.
 
 **Requisitos:**
+
 1. **Registro de jugadores por disciplina**
    - Cada jugador: **ID único** y **nombre**.
    - **Sin duplicados** en la misma disciplina.
@@ -31,27 +62,27 @@ Administrar un torneo con varias disciplinas (fútbol, básquetbol, voleibol, et
    - Buscar si un jugador está inscrito en una disciplina.
    - Eliminar jugador de una disciplina.
 4. **Menú de opciones:**
-   1) Mostrar jugadores por deporte  
-   2) Contar jugadores en cada disciplina  
-   3) Fusionar equipos (unión)  
-   4) Ver jugadores en común (intersección)  
-   5) Transferir jugador de un deporte a otro  
-   6) Mostrar todos los jugadores **ordenados por nombre**  
-   7) Mostrar todos los jugadores en **orden de inscripción**  
-   8) **Ranking** de jugadores por **ID**  
-   9) Salir
+   1. Mostrar jugadores por deporte
+   2. Contar jugadores en cada disciplina
+   3. Fusionar equipos (unión)
+   4. Ver jugadores en común (intersección)
+   5. Transferir jugador de un deporte a otro
+   6. Mostrar todos los jugadores **ordenados por nombre**
+   7. Mostrar todos los jugadores en **orden de inscripción**
+   8. **Ranking** de jugadores por **ID**
+   9. Salir
 
 **Pruebas sugeridas:**
-- Contar inscritos por disciplina.  
-- Fusionar equipos (fútbol + básquetbol) y mostrar únicos.  
-- Encontrar jugadores comunes (intersección) entre deportes.  
-- Transferir jugador de básquetbol a fútbol.  
-- Mostrar jugadores ordenados por **nombre** (TreeSet).  
-- Generar listado en **orden de inscripción** (LinkedHashSet).  
+
+- Contar inscritos por disciplina.
+- Fusionar equipos (fútbol + básquetbol) y mostrar únicos.
+- Encontrar jugadores comunes (intersección) entre deportes.
+- Transferir jugador de básquetbol a fútbol.
+- Mostrar jugadores ordenados por **nombre** (TreeSet).
+- Generar listado en **orden de inscripción** (LinkedHashSet).
 - Ranking por **ID** (p. ej., `TreeSet` con comparador por ID).
 
 **📂 Dirección del proyecto:** [`setDeportes`](/ejercicios/setDeportes)
-
 
 ---
 
@@ -59,21 +90,23 @@ Administrar un torneo con varias disciplinas (fútbol, básquetbol, voleibol, et
 
 **Fecha:** 18/09/2025  
 **Enunciado:**  
-A partir de una tabla de llegadas de vuelos, se pide:  
+A partir de una tabla de llegadas de vuelos, se pide:
 
-1. Crear una lista de objetos `Vuelo` manteniendo el mismo orden de la tabla original.  
-   - Atributos: nombre (String), origen (String), destino (String), fecha de llegada (LocalDate/LocalTime) y número de pasajeros (int).  
+1. Crear una lista de objetos `Vuelo` manteniendo el mismo orden de la tabla original.
 
-2. Implementar un método que permita ordenar los vuelos por fecha de llegada de forma ascendente.  
+   - Atributos: nombre (String), origen (String), destino (String), fecha de llegada (LocalDate/LocalTime) y número de pasajeros (int).
 
-3. Obtener el último vuelo en llegar.  
+2. Implementar un método que permita ordenar los vuelos por fecha de llegada de forma ascendente.
 
-4. Identificar el vuelo con el menor número de pasajeros.  
+3. Obtener el último vuelo en llegar.
 
-El resultado esperado debe mostrar:  
-- El listado ordenado por fecha de llegada ascendente.  
-- El último vuelo en llegar.  
-- El vuelo con menor número de pasajeros.  
+4. Identificar el vuelo con el menor número de pasajeros.
+
+El resultado esperado debe mostrar:
+
+- El listado ordenado por fecha de llegada ascendente.
+- El último vuelo en llegar.
+- El vuelo con menor número de pasajeros.
 
 **📂 Dirección del proyecto:** [`ProyectoVuelo`](/ejercicios/proyectoVuelo)
 
@@ -83,23 +116,24 @@ El resultado esperado debe mostrar:
 
 **Fecha:** 15/09/2025  
 **Enunciado:**  
-Crear una clase con métodos estáticos para administrar facturas:  
+Crear una clase con métodos estáticos para administrar facturas:
 
-1. **Guardar factura:** se debe almacenar en un archivo dentro de una carpeta llamada `facturas`, con el nombre `factura_idFactura.txt`.  
-   - Ejemplo: `Archivos.guardarFactura(f1);`  
+1. **Guardar factura:** se debe almacenar en un archivo dentro de una carpeta llamada `facturas`, con el nombre `factura_idFactura.txt`.
 
-2. **Leer factura:** mostrar en consola el contenido de una factura dado su ID.  
-   - Ejemplo: `Archivos.leerFactura(idFactura);`  
+   - Ejemplo: `Archivos.guardarFactura(f1);`
 
-3. **Listar facturas:** mostrar en consola los nombres de todos los archivos de facturas existentes.  
-   - Ejemplo de salida:  
+2. **Leer factura:** mostrar en consola el contenido de una factura dado su ID.
+
+   - Ejemplo: `Archivos.leerFactura(idFactura);`
+
+3. **Listar facturas:** mostrar en consola los nombres de todos los archivos de facturas existentes.
+   - Ejemplo de salida:
      ```
      factura_1.txt
      factura_2.txt
-     ```  
+     ```
 
 **📂 Dirección del proyecto:** [`sistemaDeFacturacion`](/ejercicios/sistemaDeFacturacion)
-
 
 ---
 
@@ -107,19 +141,18 @@ Crear una clase con métodos estáticos para administrar facturas:
 
 **Fecha:** 10/09/2025  
 **Enunciado:**  
-Diseñar una jerarquía de productos con una clase padre `Producto` (atributos: nombre, precio) y cuatro clases hijas:  
+Diseñar una jerarquía de productos con una clase padre `Producto` (atributos: nombre, precio) y cuatro clases hijas:
 
-- **Fruta:** peso, color.  
-- **Lácteo:** cantidad, proteínas.  
-- **Limpieza:** componentes, litros.  
-- **NoPerecible:** contenido, calorías.  
+- **Fruta:** peso, color.
+- **Lácteo:** cantidad, proteínas.
+- **Limpieza:** componentes, litros.
+- **NoPerecible:** contenido, calorías.
 
-Cada clase debe tener sus constructores y getters para inicializar y acceder a los atributos.  
+Cada clase debe tener sus constructores y getters para inicializar y acceder a los atributos.
 
-En la clase `Main`, crear un objeto "bolsa" para cada tipo de producto con 5 elementos y mostrar el detalle completo de cada uno (nombre, precio y atributos propios) sin necesidad de usar *casting* ni sobrescribir `toString()`.  
+En la clase `Main`, crear un objeto "bolsa" para cada tipo de producto con 5 elementos y mostrar el detalle completo de cada uno (nombre, precio y atributos propios) sin necesidad de usar _casting_ ni sobrescribir `toString()`.
 
 **📂 Dirección del proyecto:** [`carritoDeSupermercado`](/ejercicios/carritoDeSupermercado)
-
 
 ---
 
@@ -127,9 +160,10 @@ En la clase `Main`, crear un objeto "bolsa" para cada tipo de producto con 5 ele
 
 **Fecha:** 08/09/2025  
 **Enunciado:**  
-Desarrolla un programa que lea un archivo de texto con una lista de nombres de usuarios.  
-- Si el archivo no existe, captura la excepción correspondiente.  
-- Verifica que cada nombre tenga al menos 3 caracteres; en caso contrario, lanza una excepción personalizada llamada `NombreInvalidoException`.  
+Desarrolla un programa que lea un archivo de texto con una lista de nombres de usuarios.
+
+- Si el archivo no existe, captura la excepción correspondiente.
+- Verifica que cada nombre tenga al menos 3 caracteres; en caso contrario, lanza una excepción personalizada llamada `NombreInvalidoException`.
 
 **📂 Dirección del proyecto:** [`validacionDeUsuarios`](/ejercicios/validacionDeUsuarios)
 
@@ -139,24 +173,26 @@ Desarrolla un programa que lea un archivo de texto con una lista de nombres de u
 
 **Fecha:** 04/09/2025  
 **Enunciado:**  
-El objetivo es exponer los conceptos de **polimorfismo** mediante clases abstractas e interfaces.  
+El objetivo es exponer los conceptos de **polimorfismo** mediante clases abstractas e interfaces.
 
-- **Interfaces:**  
-  - `IProducto`: `getPrecio()`, `getPrecioVenta()`.  
-  - `IElectronico`: `getFabricante()`.  
-  - `ILibro`: `getFechaPublicacion()`, `getAutor()`, `getTitulo()`, `getEditorial()`.  
+- **Interfaces:**
 
-- **Clases abstractas:**  
-  - `Producto` (implementa `IProducto`, atributo `precio`).  
-  - `Electronico` (implementa `IElectronico`, atributo `fabricante`).  
+  - `IProducto`: `getPrecio()`, `getPrecioVenta()`.
+  - `IElectronico`: `getFabricante()`.
+  - `ILibro`: `getFechaPublicacion()`, `getAutor()`, `getTitulo()`, `getEditorial()`.
 
-- **Clases concretas:**  
-  - `IPhone` (extiende `Electronico`, atributos `color` y `modelo`).  
-  - `TvLcd` (extiende `Electronico`, atributo `pulgada`).  
-  - `Libro` (extiende `Producto`, implementa `ILibro`, atributos `fechaPublicacion`, `autor`, `titulo`, `editorial`).  
-  - `Comics` (extiende `Libro`, atributo `personaje`).  
+- **Clases abstractas:**
 
-Finalmente, crear la clase `ProyectoCatalogo` con ejemplos (4 a 7 objetos) en un arreglo `IProducto[]` y mostrar los datos en consola aplicando polimorfismo.  
+  - `Producto` (implementa `IProducto`, atributo `precio`).
+  - `Electronico` (implementa `IElectronico`, atributo `fabricante`).
+
+- **Clases concretas:**
+  - `IPhone` (extiende `Electronico`, atributos `color` y `modelo`).
+  - `TvLcd` (extiende `Electronico`, atributo `pulgada`).
+  - `Libro` (extiende `Producto`, implementa `ILibro`, atributos `fechaPublicacion`, `autor`, `titulo`, `editorial`).
+  - `Comics` (extiende `Libro`, atributo `personaje`).
+
+Finalmente, crear la clase `ProyectoCatalogo` con ejemplos (4 a 7 objetos) en un arreglo `IProducto[]` y mostrar los datos en consola aplicando polimorfismo.
 
 **📂 Dirección del proyecto:** [`interfacesCatalogo`](/ejercicios/interfacesCatalogo)
 
@@ -166,20 +202,21 @@ Finalmente, crear la clase `ProyectoCatalogo` con ejemplos (4 a 7 objetos) en un
 
 **Fecha:** 02/09/2025  
 **Enunciado:**  
-Diseñar un programa para administrar mamíferos de un zoológico: leones, tigres, guepardos, lobos y perros salvajes africanos.  
+Diseñar un programa para administrar mamíferos de un zoológico: leones, tigres, guepardos, lobos y perros salvajes africanos.
 
-Se requiere una jerarquía con la clase abstracta `Mamifero`, y derivadas `Felino` (León, Tigre, Guepardo) y `Canino` (Lobo, Perro).  
-- **Mamífero:** atributos comunes (hábitat, altura, largo, peso, nombre científico) y métodos abstractos `comer()`, `dormir()`, `correr()`, `comunicarse()`.  
-- **Canino:** agrega color y tamaño de colmillos.  
-- **Felino:** agrega tamaño de garras y velocidad.  
-- **Clases concretas:**  
-  - León: número de manada y potencia de rugido.  
-  - Tigre: especie.  
-  - Guepardo: sin atributos extra.  
-  - Lobo: número de camada y especie.  
-  - Perro: fuerza de mordida.  
+Se requiere una jerarquía con la clase abstracta `Mamifero`, y derivadas `Felino` (León, Tigre, Guepardo) y `Canino` (Lobo, Perro).
 
-Crear la clase `EjemploMamiferos` con instancias (5 a 7 objetos) y mostrar la información en consola usando polimorfismo (`toString()`).  
+- **Mamífero:** atributos comunes (hábitat, altura, largo, peso, nombre científico) y métodos abstractos `comer()`, `dormir()`, `correr()`, `comunicarse()`.
+- **Canino:** agrega color y tamaño de colmillos.
+- **Felino:** agrega tamaño de garras y velocidad.
+- **Clases concretas:**
+  - León: número de manada y potencia de rugido.
+  - Tigre: especie.
+  - Guepardo: sin atributos extra.
+  - Lobo: número de camada y especie.
+  - Perro: fuerza de mordida.
+
+Crear la clase `EjemploMamiferos` con instancias (5 a 7 objetos) y mostrar la información en consola usando polimorfismo (`toString()`).
 
 **📂 Dirección del proyecto:** [`ejercicioMamiferos`](/ejercicios/ejercicioMamiferos)
 
@@ -189,17 +226,18 @@ Crear la clase `EjemploMamiferos` con instancias (5 a 7 objetos) y mostrar la in
 
 **Fecha:** 01/09/2025  
 **Enunciado:**  
-Una compañía maneja empleados y clientes, entre los empleados hay gerentes que manejan presupuesto para su área (modificable) y a todos los empleados se les puede aumentar el sueldo.  
+Una compañía maneja empleados y clientes, entre los empleados hay gerentes que manejan presupuesto para su área (modificable) y a todos los empleados se les puede aumentar el sueldo.
 
-Se pide una jerarquía de clases de los tipos de persona mencionados, tomando como base la figura del diagrama UML de clases.  
+Se pide una jerarquía de clases de los tipos de persona mencionados, tomando como base la figura del diagrama UML de clases.
 
-Para todas las clases de la jerarquía tenga en cuenta:  
-- Métodos *getter*  
-- Un constructor  
-- El método `toString()` con sobre-escritura  
-- Para `Gerente` además, el método *setter* de presupuesto.  
+Para todas las clases de la jerarquía tenga en cuenta:
 
-También incluir una clase `Main` con algún ejemplo de un `Gerente` e imprimir todos sus datos (y heredados) vía `toString()`.  
+- Métodos _getter_
+- Un constructor
+- El método `toString()` con sobre-escritura
+- Para `Gerente` además, el método _setter_ de presupuesto.
+
+También incluir una clase `Main` con algún ejemplo de un `Gerente` e imprimir todos sus datos (y heredados) vía `toString()`.
 
 **📂 Dirección del proyecto:** [`companiaEmpleados`](/ejercicios/companiaEmpleados)
 
@@ -209,45 +247,47 @@ También incluir una clase `Main` con algún ejemplo de un `Gerente` e imprimir 
 
 **Fecha:** 28/08/2025  
 **Enunciado:**  
-Vas a crear un mini sistema de pedidos usando varios enum.  
+Vas a crear un mini sistema de pedidos usando varios enum.
 
-**Paso 1: Crear enums**  
-1. `OrderStatus` → con los estados de un pedido:  
-   - `NEW` → Pedido creado  
-   - `PROCESSING` → Pedido en proceso  
-   - `SHIPPED` → Pedido enviado  
-   - `DELIVERED` → Pedido entregado  
+**Paso 1: Crear enums**
+
+1. `OrderStatus` → con los estados de un pedido:
+
+   - `NEW` → Pedido creado
+   - `PROCESSING` → Pedido en proceso
+   - `SHIPPED` → Pedido enviado
+   - `DELIVERED` → Pedido entregado
    - `CANCELLED` → Pedido cancelado  
-   Cada estado debe tener un mensaje asociado.  
+     Cada estado debe tener un mensaje asociado.
 
-2. `OrderPriority` → con los niveles de prioridad:  
-   - `LOW`  
-   - `MEDIUM`  
+2. `OrderPriority` → con los niveles de prioridad:
+
+   - `LOW`
+   - `MEDIUM`
    - `HIGH`  
-   Cada prioridad debe tener un número de atención (1 = baja prioridad, 3 = alta prioridad).  
+     Cada prioridad debe tener un número de atención (1 = baja prioridad, 3 = alta prioridad).
 
-3. `PaymentMethod` → con los métodos de pago:  
-   - `CASH` → Efectivo  
-   - `CARD` → Tarjeta de crédito/débito  
+3. `PaymentMethod` → con los métodos de pago:
+   - `CASH` → Efectivo
+   - `CARD` → Tarjeta de crédito/débito
    - `TRANSFER` → Transferencia bancaria  
-   Cada uno con una descripción (ejemplo: "Efectivo", "Tarjeta de crédito/débito", "Transferencia bancaria").  
-
+     Cada uno con una descripción (ejemplo: "Efectivo", "Tarjeta de crédito/débito", "Transferencia bancaria").
 
 **Paso 2: Crear la clase `Order`**  
-La clase debe tener:  
-- `int id` → identificador del pedido  
-- `String customer` → nombre del cliente  
-- `OrderStatus status`  
-- `OrderPriority priority`  
-- `PaymentMethod paymentMethod`  
+La clase debe tener:
 
-Además, un método `showDetails()` que muestre la información del pedido.  
+- `int id` → identificador del pedido
+- `String customer` → nombre del cliente
+- `OrderStatus status`
+- `OrderPriority priority`
+- `PaymentMethod paymentMethod`
 
+Además, un método `showDetails()` que muestre la información del pedido.
 
 **Paso 3: Clase principal `Main`**  
-En `main()`, crea **3 pedidos diferentes** con distintos estados, prioridades y métodos de pago, y muestra los detalles en pantalla.  
+En `main()`, crea **3 pedidos diferentes** con distintos estados, prioridades y métodos de pago, y muestra los detalles en pantalla.
 
-**Ejemplo de salida esperada:** 
+**Ejemplo de salida esperada:**
 
 Pedido #1
 Cliente: Ana
