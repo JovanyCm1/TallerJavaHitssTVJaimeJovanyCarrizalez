@@ -11,6 +11,19 @@
 
 ## Lista de Ejercicios
 
+### 21. Expresión Lambda: Palabra más repetida
+**Fecha:** 30/09/2025  
+**Enunciado:**  
+Escribir una **expresión lambda** que reciba una frase y cuente cuántas veces se repite cada palabra, devolviendo la **palabra más repetida** junto con su cantidad de repeticiones.  
+
+Requisitos:  
+- La expresión lambda debe recibir una frase y devolver un objeto `Map` con la palabra más repetida como clave y el número de repeticiones como valor.  
+- El resultado debe mostrarse en consola, iterando el `Map` o accediendo al primer elemento con `get()`.  
+
+**📂 Dirección del proyecto:** [`ExpresionLambdaPalabra.java`](/ejercicios/expresionLambdaPalabra)
+
+---
+
 ### 20. Expresión Lambda: Transformación de frases
 **Fecha:** 29/09/2025  
 **Enunciado:**  
@@ -18,7 +31,7 @@ Crear una expresión **Lambda** que:
 1. Elimine los espacios, comas y puntos de una frase.  
 2. Devuelva la frase resultante convertida en **mayúsculas**.  
 
-**📂 Dirección del proyecto:** [`ExpresionLambdaFrase`](/ejercicios/expresionLambdaFrase)
+**📂 Dirección del proyecto:** [`ExpresionLambdaFrase`](/ejercicios/expresionLambdaFrase.java)
 
 ---
 
