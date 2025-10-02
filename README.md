@@ -58,7 +58,7 @@ Crear una expresión **Lambda** que:
 1. Elimine los espacios, comas y puntos de una frase.  
 2. Devuelva la frase resultante convertida en **mayúsculas**.  
 
-**📂 Dirección del proyecto:** [`ExpresionLambdaFrase`](/ejercicios/ExpresionLambdaFrase.java)
+**📂 Dirección del proyecto:** [`ExpresionLambdaFrase.java`](/ejercicios/ExpresionLambdaFrase.java)
 
 ---
 
