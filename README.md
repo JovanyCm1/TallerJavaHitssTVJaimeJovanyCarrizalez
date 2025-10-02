@@ -11,6 +11,33 @@
 
 ## Lista de Ejercicios
 
+### 22. ifSupermercado
+**Fecha:** 01/10/2025  
+**Enunciado:**  
+Implementar un sistema básico de gestión de ventas para un supermercado.
+
+**Entidades:**
+1. **Producto**: `id (int)`, `nombre (String)`, `precio (double)`, `stock (int)`  
+2. **Cliente**: `id (int)`, `nombre (String)`, `tipo (String => "Normal", "VIP")`  
+3. **Empleado**: `id (int)`, `nombre (String)`, `puesto (String)`  
+4. **Venta**: `id (int)`, `cliente (Cliente)`, `empleado (Empleado)`, `productos (List<Producto>)`, `total (double)`
+
+**Requerimientos (interfaces funcionales):**
+1. Filtrar productos con **stock < 5**.  
+2. Calcular el **total** de una venta a partir de su lista de productos.  
+3. Imprimir los **detalles** de una venta.  
+4. Generar un **producto de muestra** para pruebas.  
+5. Aplicar **10% de descuento** a un producto.  
+6. **Comparar** dos productos y devolver el **más caro**.  
+7. Verificar si un **cliente** puede acceder a **descuento** (p. ej., si es VIP y la compra supera 1000).  
+8. Generar un **ticket de venta** (Cliente + Venta) en consola.  
+9. **Notificar** a un cliente que su compra fue procesada por un empleado.  
+10. Clase `SupermercadoService` que centralice estas **operaciones**.
+
+**📂 Dirección del proyecto:** [`ifSupermercado`](/ejercicios/ifSupermercado)
+
+---
+
 ### 21. Expresión Lambda: Palabra más repetida
 **Fecha:** 30/09/2025  
 **Enunciado:**  
