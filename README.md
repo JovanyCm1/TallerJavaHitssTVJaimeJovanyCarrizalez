@@ -11,6 +11,38 @@
 
 ## Lista de Ejercicios
 
+### 19. Sistema Universitario
+**Fecha:** 25/09/2025  
+**Enunciado:**  
+La universidad desea un sistema para gestionar cursos, estudiantes y profesores con control de conflictos de horarios:
+
+1. **Cursos:**
+   - Cada curso tiene un nombre, un profesor, y fechas de inicio y fin.
+   - Los estudiantes inscritos no deben duplicarse.
+   - Un curso puede usarse para detectar solapamientos de fechas.
+
+2. **Estudiantes:**
+   - Cada estudiante tiene un ID único y un nombre.
+   - Un estudiante puede inscribirse en varios cursos, pero no en cursos con fechas que se traslapan.
+
+3. **Profesores:**
+   - Cada profesor puede impartir varios cursos.
+
+4. **Requisitos del sistema:**
+   - Inscribir un estudiante en un curso solo si no hay conflicto de fechas con otros cursos en los que ya esté inscrito.
+   - Retirar un estudiante de un curso.
+   - Listar los cursos de un estudiante.
+   - Listar cursos de un profesor.
+   - Listar cursos activos en una fecha determinada.
+
+5. **Estructuras sugeridas:**
+   - Usar `Set<Student>` para los estudiantes de cada curso.
+   - Usar `Map<String, Course>` para gestionar los cursos por nombre.
+
+**📂 Dirección del proyecto:** [`mapSistemaUniversitario`](/ejercicios/mapSistemaUniversitario)
+
+---
+
 ### 18. Gestión de Inventario en una Tienda de Deportes
 
 **Fecha:** 24/09/2025  
